@@ -1,0 +1,8 @@
+---
+# tasks file for kerberos (Ubuntu specific)
+
+- name: Install Kerberos client packages
+  apt: name={{ item }} state=present update_cache=yes
+  with_items: kerberos_client_packages
+  when: kerberos_client
+  tags: kerberos

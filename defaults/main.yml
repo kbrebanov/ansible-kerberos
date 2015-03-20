@@ -1,2 +1,9 @@
 ---
 # defaults file for kerberos
+
+kerberos_client: True
+
+kerberos_client_dns_lookup_realm: "true"
+kerberos_client_dns_lookup_kdc: "true"
+
+kerberos_realm: realm.example.com

@@ -1,0 +1,5 @@
+---
+# vars file for kerberos (Ubuntu specific)
+
+kerberos_client_packages:
+  - krb5-user
